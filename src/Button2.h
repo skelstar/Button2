@@ -16,7 +16,10 @@
 /////////////////////////////////////////////////////////////////
 
 #define DEBOUNCE_MS 50
+
+#ifndef LONGCLICK_MS
 #define LONGCLICK_MS 200
+#endif
 #define DOUBLECLICK_MS 300
 #define CAPACITIVE_TOUCH_THRESHOLD 35
 
