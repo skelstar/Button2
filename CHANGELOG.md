@@ -1,27 +1,43 @@
 # Changelog
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## Unreleased
 
-## Unsreleased
-- 
+## [1.6.0] - 2021-02-10
+- added getter/setter functions for debounce, longclick and doubleclick timeouts
+- removed debounce timeout parameter from ```contructor``` and ```begin()```
+
+## [1.5.4] - 2021-02-08
+- Added ```getAttachPin()``` function, as suggested by [madivad](https://github.com/madivad) in issue [#23](https://github.com/LennartHennigs/Button2/issues/23)
+
+## [1.5.3] - 2021-01-26
+- Fixed a bug in the constructor, as suggested by [alex-s-v](https://github.com/alex-s-v) in pull request [#22](https://github.com/LennartHennigs/Button2/pull/22)
+
+## [1.5.2] - 2021-01-26
+- Fixed a bug in the ```isPressed()``` function, as suggested by [zenturacp](https://github.com/zenturacp) in [#21](https://github.com/LennartHennigs/Button2/issues/21)
+
+## [1.5.1] - 2021-01-04
+- Fixed a bug in the ```loop()``` function
+
+## [1.5.0] - 2021-01-03
+- Added default constructor and ```begin()``` function
+- Added pull request by [skelstar](https://github.com/skelstar) to add the ```setLongClickDetectedHandler()``` function which is triggered as soon as the longclick timeout has passed
 
 ## [1.4.1] - 2020-12-19
-- Moved activeLow outside of isCapacitive condition (as suggested by [Wai Lin](https://github.com/w4ilun) in[#18](https://github.com/LennartHennigs/Button2/pull/18)
+- Moved activeLow outside of isCapacitive condition (as suggested by [Wai Lin](https://github.com/w4ilun) in [#18](https://github.com/LennartHennigs/Button2/pull/18)
 
 
 ## [1.4.0] - 2020-11-06
 - Updated LongpressHandler example - changed variable name to from ```buttonA``` to ```button```
-- toggled ```pressed``` and ```released``` (as suggesed by [TommyC81] (https://github.com/TommyC81) in [#16] (https://github.com/LennartHennigs/Button2/issues/16))
-- added debug function ```isPressedRaw()``` (as suggesed by [TommyC81] (https://github.com/TommyC81) in [#16] (https://github.com/LennartHennigs/Button2/issues/16))
-- fixed bug with ```click_count``` (as suggesed by [TommyC81] (https://github.com/TommyC81) in [#16] (https://github.com/LennartHennigs/Button2/issues/16))
+- toggled ```pressed``` and ```released``` (as suggesed by [TommyC81](https://github.com/TommyC81) in [#16](https://github.com/LennartHennigs/Button2/issues/16))
+- added debug function ```isPressedRaw()``` (as suggesed by [TommyC81](https://github.com/TommyC81) in [#16](https://github.com/LennartHennigs/Button2/issues/16))
+- fixed bug with ```click_count``` (as suggesed by [TommyC81](https://github.com/TommyC81) in [#16](https://github.com/LennartHennigs/Button2/issues/16))
 - changed return types of ```getNumberOfClicks()``` and  ```getClickType()``` to ```byte```
     
 
 ## [1.3.0] - 2020-11-06
-- Added capacitive touch sensor capabilties (for ESP32) (as suggested by [qubolino](https://github.com/qubolino) in [#11] (https://github.com/LennartHennigs/Button2/issues/11)) 
-- Removed deprecated entry in the library.properties file (as suggested by [https://github.com/SNL5943]) in [#15](https://github.com/LennartHennigs/Button2/issues/15)
-- Added ```const```  modifier to functions (as suggested by [Anton-V-K](https://github.com/Anton-V-K) in [#13] (https://github.com/LennartHennigs/Button2/issues/13)) 
+- Added capacitive touch sensor capabilties (for ESP32) (as suggested by [qubolino](https://github.com/qubolino) in [#11](https://github.com/LennartHennigs/Button2/issues/11)) 
+- Removed deprecated entry in the library.properties file (as suggested by [SangLe](https://github.com/SNL5943)) in [#15](https://github.com/LennartHennigs/Button2/issues/15)
+- Added ```const```  modifier to functions (as suggested by [Anton-V-K](https://github.com/Anton-V-K) in [#13](https://github.com/LennartHennigs/Button2/issues/13)) 
 
 
 ## [1.2.0] - 2020-04-16
@@ -42,3 +58,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2017-11-09
 - initial release
+
+
+## Note 
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
